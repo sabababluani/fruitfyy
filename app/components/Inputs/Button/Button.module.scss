@@ -1,0 +1,48 @@
+.default button {
+    background-color: #FFB800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 21px, 28px, 21px, 28px;
+    box-shadow: 2px 4px 0px 0px #000000;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-right: 28px;
+    padding-left: 28px;
+    cursor: pointer;
+    max-height: 74px;
+}
+
+
+.default button p {
+    font-family: Inconsolata;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 29.37px;
+    text-align: center;
+
+}
+
+.inline button {
+    background-color: #FFB800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 4px 0px 0px #000000;
+    cursor: pointer;
+    max-height: 74px;
+    padding-left: 106px;
+    padding-right: 106px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.inline button p {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29.37px;
+    text-align: center;
+}

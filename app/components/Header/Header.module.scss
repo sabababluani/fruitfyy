@@ -1,0 +1,23 @@
+.wrapper {
+    background-color: #418DF9;
+    display: flex;
+    align-items: center;
+    height: 112px;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.containerWrapper {
+    display: flex;
+    gap: 16px;
+}

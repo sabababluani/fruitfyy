@@ -1,0 +1,70 @@
+.container {
+    width: 342px;
+    height: 545px;
+    border-radius: 8px;
+    border: 4px solid #000;
+    background: #FFF1CC;
+    box-shadow: 4px 4px 0px 0px #000;
+    padding-left: 24px;
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.categoryContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container h4 {
+    color: #000;
+    font-family: Inconsolata;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.categoryContainer p {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.priceContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.priceContainer p {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.littleContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+}
+
+.saleContainer p {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.saleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.saleContainer img {
+    width: 38px;
+    height: 38px;
+}
