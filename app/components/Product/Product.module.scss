@@ -1,0 +1,61 @@
+.wrapper {
+    width: 342px;
+    height: 411px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0px 0px #000000;
+    border: 4px solid black;
+    background-color: #03D1AA;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.photoContainer {
+    position: relative;
+    box-shadow: 2px 4px 0px 0px #000000;
+    border: 4px solid #000000;
+    border-radius: 8px;
+}
+
+.editRemoveContainer {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    right: 16px;
+    top: 12px;
+}
+
+.photo {
+    width: 294px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+}
+
+.photo img {
+    margin: 0 auto;
+}
+
+.paragraphContainer {
+    width: 294px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.title span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.title p,
+.price p {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.button {
+    margin-top: 24px;
+}

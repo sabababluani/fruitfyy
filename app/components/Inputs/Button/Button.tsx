@@ -10,11 +10,19 @@ interface Props {
 }
 
 const Button = (props: Props) => {
-    return (
-        <div className={props.mode === 'default' ? styles.default : styles.inline}>
-            <button><p>{props.children}</p></button>
-        </div>
-    )
+
+    const classes = [styles.container, props.className];
+    if (props.mode === 'default') classes.push(styles.default)
+    if (props.mode === 'full') classes.push(styles.full);
+    if (props.mode === 'inline') classes.push(styles.inline);
+
+
+
+        return (
+            <div className={classes.join(' ').trim()}>
+                <button><p>{props.children}</p></button>
+            </div>
+        )
 }
 
 export default Button;

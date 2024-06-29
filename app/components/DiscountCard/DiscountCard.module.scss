@@ -1,0 +1,40 @@
+.sale h4 {
+    font-size: 72px;
+    font-weight: 900;
+    color: #EA2845;
+}
+
+.container {
+    max-width: 1066px;
+    width: 100%;
+    background-color: #fff;
+    border: 4px solid black;
+    box-shadow: 2px 4px 0px 0px #000000;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    height: 140px;
+    gap: 128px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 720px;
+    width: 100%;
+}
+
+.container h2 {
+    font-size: 48px;
+    font-weight: 900;
+    color: black;
+}
+
+.container h3 {
+    color: #03D1AA;
+    font-size: 48px;
+    font-weight: 900;
+}

@@ -18,7 +18,7 @@ const Header = () => {
                         <Button mode="default" children="Shop" />
                     </div>
                     <div>
-                        <Input />
+                        <Input src="/Search Icon.png"/>
                     </div>
                 </div>
             </div>

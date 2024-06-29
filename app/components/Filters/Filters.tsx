@@ -23,7 +23,7 @@ const Filters = () => {
                 <img src="/Search.png" />
             </div>
             <div className={styles.button}>
-                <Button children='Apply' mode="full" />
+                <Button children='Apply' mode="inline" />
             </div>
         </div>
     )
