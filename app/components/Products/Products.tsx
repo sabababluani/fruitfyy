@@ -11,7 +11,7 @@ const Products = () => {
         const fetchedProducts = [
             { src: 'apple.png', title: "Gori's Apple", price: '5$', color: 'Green' },
             { src: 'pear.png', title: "Pear", price: '3$', color: 'also green' },
-            { src: 'peach.png', title: "Peach", price: '7$', color: 'Red' },
+            { src: 'peach.png', title: "Peach", price: '7$', color: 'Red' },    
         ];
         setProducts(fetchedProducts);
         setIsEmpty(fetchedProducts.length === 0);

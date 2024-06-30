@@ -7,6 +7,9 @@
     padding-left: 32px;
     padding-right: 32px;
     width: 100%;
+    position: sticky;
+    top: 0  ;
+    z-index: 2;
 }
 
 .container {
@@ -20,4 +23,7 @@
 .containerWrapper {
     display: flex;
     gap: 16px;
+}
+.container a {
+    text-decoration: none;
 }

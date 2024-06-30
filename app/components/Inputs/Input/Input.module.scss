@@ -1,46 +1,59 @@
-.wrapper .container {
-    width: 700px;
-    height: 75px;
-    margin: auto;
-    border: 4px solid black;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 2px 4px 0px 0px #000000;
-    position: relative;
-}
+ .container {
+     width: 700px;
+     height: 75px;
+     margin: auto;
+     border: 4px solid black;
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     background-color: #fff;
+     border-radius: 8px;
+     box-shadow: 2px 4px 0px 0px #000000;
+     position: relative;
+ }
 
-.container input {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    font-size: 24px;
-    padding-left: 16px;
-}
+ .container input {
+     font-size: 32px;
+     font-weight: 900;
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     border: none;
+     outline: none;
+     padding-left: 16px;
+ }
 
-.container img {
-    cursor: pointer;
-    z-index: 2;
-    position: absolute;
-    right: 16px;
-}
+ .container img {
+     cursor: pointer;
+     z-index: 2;
+     position: absolute;
+     right: 16px;
+ }
 
-.wrapper {
-    max-width: 704px;
-    width: 100%;
-}
 
-.long {
+ .long {
+     width: 704px;
+     position: relative;
+     left: 20;
+ }
+
+ .long input {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+ }
+
+ .medium {
+     position: relative;
+     width: 524px;
+
+ }
+
+ .small {
+     width: 160px;
+ }
+
+ .fat {
     width: 704px;
-    position: relative;
-}
-
-.long input {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
+    height: 175px;
+ }

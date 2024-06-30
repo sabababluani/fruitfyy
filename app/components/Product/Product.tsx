@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Button from '../Inputs/Button/Button'
 import styles from './Product.module.scss'
 
@@ -33,7 +34,9 @@ const Product = (props: Props) => {
                 </div>
             </div>
             <div className={styles.button}>
-                <Button children='Buy Now' mode='inline' />
+                <Link href='/BuyProduct'>
+                    <Button children='Buy Now' mode='inline' />
+                </Link>
             </div>
         </div>
     )
