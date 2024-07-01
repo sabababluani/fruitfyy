@@ -1,8 +1,39 @@
 .container {
-    width: 704px;
-    height: 562px;
+    max-width: 704px;
+    width: 100%;
+    min-height: 562px;
+    height: 100%;
     border: 4px solid #000000 ;
     box-shadow: 2px 4px 0px 0px #000000;
     border-radius: 8px  ;
     background-color: #03D1AA  ;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 148px;
+}
+
+.container h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.container p {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.container span {
+    font-size: 48px;
+    font-weight: 900;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
