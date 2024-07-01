@@ -1,24 +1,27 @@
 .wrapper {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: start;
-    gap: 20px;
-    width: 704px;
-    height: 763px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 200px;
-    margin-bottom: 200px    ;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-right: 32px;
+    margin-left: 32px;
+    width: 704px;
+}
+
 .wrapper h1 {
     font-size: 48px;
     font-weight: 900;
     margin-bottom: 18px;
 }
 
-.container p{
+.container p {
     font-size: 28px;
     font-weight: 800;
     margin-bottom: 7px;

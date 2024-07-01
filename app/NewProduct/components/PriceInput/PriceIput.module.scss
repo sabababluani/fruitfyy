@@ -3,10 +3,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .container p {
     font-size: 28px;
     font-weight: 800;
     margin-bottom: 7px;
+}
+
+.price {
+    width: 100%;
+    max-width: 524px;
 }

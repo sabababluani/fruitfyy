@@ -6,24 +6,67 @@
     justify-content: space-between;
     padding-left: 32px;
     padding-right: 32px;
-    width: 100%;
     position: sticky;
-    top: 0  ;
+    top: 0;
     z-index: 2;
 }
 
 .container {
     display: flex;
     align-items: center;
-    gap: 16px;
     width: 100%;
     justify-content: space-between;
+    gap: 20px;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .containerWrapper {
     display: flex;
     gap: 16px;
+    max-width: 1100px;
+    width: 100%;
+    justify-content: space-between;
 }
+
 .container a {
     text-decoration: none;
+}
+
+.inputContainer {
+    max-width: 700px;
+    width: 100%;
+}
+
+.frame {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .buttonContainer {
+        display: none;
+    }
+
+    .wrapper {
+        height: 204px;
+        width: 100%;
+    }
+
+    .imgContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .frame {
+        display: block;
+    }
 }

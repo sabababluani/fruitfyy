@@ -8,11 +8,14 @@
     box-shadow: 2px 4px 0px 0px #000;
     height: 72px;
     color: #252B42;
-    font-family: Inconsolata;
     font-size: 24px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     padding: 10px 21px;
     outline: none;
+    width: 100%;
+}
+
+.container {
+    max-width: 300px;
+    width: 100%;
 }

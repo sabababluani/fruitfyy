@@ -10,11 +10,16 @@ const Header = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.container}>
-                <div>
-                    <img src="/Frutify.png" />
+                <div className={styles.imgContainer}>
+                    <div>
+                        <img src="/Frutify.png" />
+                    </div>
+                    <div className={styles.frame}>
+                        <img src="frame.png" />
+                    </div>
                 </div>
                 <div className={styles.containerWrapper}>
-                    <div className={styles.container}>
+                    <div className={styles.buttonContainer}>
                         <Link href='/NewProduct'>
                             <Button mode="default" children="+ New Product" />
                         </Link>
@@ -22,7 +27,7 @@ const Header = () => {
                             <Button mode="default" children="Shop" />
                         </Link>
                     </div>
-                    <div>
+                    <div className={styles.inputContainer}>
                         <Input src="/Search Icon.png" placeHolder="Search" />
                     </div>
                 </div>

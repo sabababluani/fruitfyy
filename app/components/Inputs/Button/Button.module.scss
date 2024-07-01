@@ -6,11 +6,10 @@
     border: 2px solid black;
     border-radius: 8px;
     box-shadow: 2px 4px 0px 0px #000000;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-right: 28px;
-    padding-left: 28px;
+    padding: 19.5px 21px  ;
     cursor: pointer;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 
@@ -29,17 +28,15 @@
     border-radius: 8px;
     box-shadow: 2px 4px 0px 0px #000000;
     cursor: pointer;
-    max-height: 74px;
-    padding-left: 106px;
-    padding-right: 106px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    height: 74px;
+    padding: 16px 106px;
 }
 
 .inline button {
     font-size: 24px;
     font-weight: 800;
     text-align: center;
+    
 }
 
 .full button {
@@ -64,9 +61,10 @@
     border-radius: 8px;
     box-shadow: 2px 4px 0px 0px #000000;
     cursor: pointer;
-    padding: 16px 287px;
     font-size: 28px;
     font-weight: 900;
     text-align: center;
+    max-width: 704px ;
+    width: 100%;
+    padding: 16px 0;
 }
-

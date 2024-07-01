@@ -17,7 +17,6 @@ const Button = (props: Props) => {
     if (props.mode === 'inline') classes.push(styles.inline);
     if (props.mode === 'streach') classes.push(styles.streach)
 
-
         return (
             <div className={classes.join(' ').trim()}>
                 <button>{props.children}</button>
