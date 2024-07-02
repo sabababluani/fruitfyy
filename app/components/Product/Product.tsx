@@ -13,6 +13,7 @@ export interface Fruit {
     category: string;
     description?: string;
     image: string;
+    onDelete?: () => void;
 }
 
 const Product = (props: Fruit) => {
@@ -32,12 +33,13 @@ const Product = (props: Fruit) => {
             });
     }, [id]);
 
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.photoContainer}>
                 <div className={styles.editRemoveContainer}>
-                    <Button children={pencil}   mode='full' />
-                    <Button children={garbage} mode='full' />
+                    <Button children={pencil} mode='full' />
+                    <Button children={garbage} mode='full' onClick={props.onDelete} />
                 </div>
                 <div className={styles.photo}>
                     <img src={props.image} />
