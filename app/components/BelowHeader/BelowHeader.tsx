@@ -9,7 +9,16 @@ const BelowHeader = () => {
                     <img src="/Group 1.png" alt="" />
                 </div>
                 <div className={styles.select}>
-                    <Select title="Price high to low" style={{width : '300px'}} />
+                    <Select values={[
+                        {
+                            value: 'low-to-high',
+                            title: 'Price low to high'
+                        },
+                        {
+                            value: 'high-to-low',
+                            title: 'Price high to low'
+                        }
+                    ]} />   
                 </div>
             </div>
         </div>

@@ -7,6 +7,7 @@ type Props = {
     description: string
     price: string
 }
+
 const BuyDescription = (props: Props) => {
     return (
         <div className={styles.container}>
@@ -16,7 +17,7 @@ const BuyDescription = (props: Props) => {
                     <p>{props.description}</p>
                 </div>
                 <div>
-                    <span>{props.price}</span>
+                    <span>{props.price}$</span>
                 </div>
             </div>
             <div className={styles.last}>

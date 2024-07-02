@@ -9,7 +9,24 @@ const Filters = () => {
             <h4>Filter</h4>
             <div className={styles.categoryContainer}>
                 <p>Category</p>
-                <Select title="All" style={{ width: '294px' }} />
+                <Select values={[
+                    {
+                        value:'all',
+                        title : 'All'
+                    },
+                    {
+                        value: 'green',
+                        title: 'Green'
+                    },
+                    {
+                        value: 'red',
+                        title: 'Red'
+                    },
+                    {
+                        value: 'yellow',
+                        title: 'Yellow'
+                    },
+                ]} />
             </div>
             <div className={styles.priceContainer}>
                 <p>Price</p>

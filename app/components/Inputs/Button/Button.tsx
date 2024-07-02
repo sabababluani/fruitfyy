@@ -11,7 +11,8 @@ interface Props {
 
 const Button = (props: Props) => {
 
-    const classes = [styles.container, props.className];
+    const classes = [];
+
     if (props.mode === 'default') classes.push(styles.default)
     if (props.mode === 'full') classes.push(styles.full);
     if (props.mode === 'inline') classes.push(styles.inline);

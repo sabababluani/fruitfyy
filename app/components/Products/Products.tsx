@@ -1,35 +1,37 @@
 import { useState, useEffect } from 'react';
 import styles from './Products.module.scss';
-import Product from '../Product/Product';
+import Product, { Fruit } from '../Product/Product';
 import Empty from '../Empty/Empty';
+import axios from 'axios';
 
 const Products = () => {
-    const [products, setProducts] = useState<any[]>([]);
+    const [products, setProducts] = useState<Fruit[]>([]);
     const [isEmpty, setIsEmpty] = useState(true);
 
     useEffect(() => {
-        const fetchedProducts = [
-            { src: 'apple.png', title: "Gori's Apple", price: '5$', color: 'Green' },
-            { src: 'pear.png', title: "Pear", price: '3$', color: 'also green' },
-            { src: 'peach.png', title: "Peach", price: '7$', color: 'Red' },    
-        ];
-        setProducts(fetchedProducts);
-        setIsEmpty(fetchedProducts.length === 0);
+        axios.get('http://10.10.51.4:3000/products')
+            .then(result => {
+                setProducts(result.data);
+                setIsEmpty(result.data.length === 0);
+            });
     }, []);
 
     return (
         <div className={styles.wrapper}>
-            {
-                isEmpty ? <Empty /> : products.map((product, index) => (
+            {isEmpty ? (
+                <Empty />
+            ) : (
+                products.map((product) => (
                     <Product
-                        key={index}
-                        src={product.src}
+                        key={product.id}
+                        id={product.id}
+                        image={product.image}
                         title={product.title}
                         price={product.price}
-                        color={product.color}
+                        category={product.category}
                     />
                 ))
-            }
+            )}
         </div>
     );
 }
