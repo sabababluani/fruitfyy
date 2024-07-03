@@ -7,10 +7,13 @@ type Props = {
 }
 
 const NameInput = (props: Props) => {
+
+
+
     return (
         <div className={styles.container}>
             <p>{props.title}</p>
-            <Input mode='long' />
+            <Input mode='long'/>
         </div>
     )
 }

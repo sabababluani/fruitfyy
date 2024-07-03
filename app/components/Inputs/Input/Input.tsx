@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from 'react';
 import styles from './Input.module.scss';
 
 type Props = {
@@ -5,10 +8,17 @@ type Props = {
     classname?: string,
     mode?: 'long' | 'fat' | 'small' | 'medium',
     value?: string,
-    placeHolder?: string
+    placeHolder?: string,  
+    inputValue?: string
 }
 
 const Input = (props: Props) => {
+
+    const [text, setText] = useState(props.value)
+
+    const onChange = (e: any) => {
+        setText(e.target.value);
+    }    
 
     const classes = [styles.container, props.classname];
 
@@ -20,7 +30,7 @@ const Input = (props: Props) => {
     return (
 
         <div className={classes.join(' ').trim()} >
-            <input type="text" placeholder={props.placeHolder} value={props.value} />
+            <input type="text" placeholder={props.placeHolder} value={props.inputValue} onChange={() => onchange}  />
             <img src={props.src} />
         </div>
     )

@@ -7,14 +7,14 @@ import styles from './page.module.scss'
 import axios from 'axios';
 import { useState } from 'react';
 
-const Rame = () => {
+const EditProduct = () => {
 
     const [form] = useForm();
     const router = useRouter();
-    const [value, setValue] = useState();
+    const [edit, setEdit] = useState()
     
-    const onFinish = (values: any) => {
-        axios.post('http://10.10.51.4:3000/products', values)
+    const onFinish = (editvalues: any) => {
+        axios.put('http://10.10.51.4:3000/products', editvalues)
             .then((response) => {
                 message.success('Product added successfully!');
                 form.resetFields();
@@ -22,13 +22,15 @@ const Rame = () => {
             .catch((error) => {
                 message.error('Failed to add product. Please try again.');
                 console.error('Error adding product:', error);
-            }); 
-        setValue(values);
-        
-    };  
+            });
+
+        setEdit(editvalues);
+    };
+    console.log(edit, 'dsasadsa');
 
     return (
         <div className={styles.wrapper}>
+
             <Form
                 autoComplete="off"
                 form={form}
@@ -53,7 +55,7 @@ const Rame = () => {
                 </div>
 
                 <div className={styles.inputwrapper}>
-                    <h4 className={styles.label}>Price</h4>
+                    <h4 className={styles.label}>მაქსიმალური ქულა</h4>
                     <Form.Item
                         name="price"
                         rules={[
@@ -70,7 +72,7 @@ const Rame = () => {
                 </div>
 
                 <div className={styles.inputwrapper}>
-                    <h4 className={styles.label}>Category</h4>
+                    <h4 className={styles.label}>category</h4>
                     <Form.Item
                         name="category"
                         className={styles.selectwrapper}
@@ -130,4 +132,4 @@ const Rame = () => {
     );
 };
 
-export default Rame;
+export default EditProduct;

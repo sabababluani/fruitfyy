@@ -13,7 +13,7 @@ export interface Fruit {
     category: string;
     description?: string;
     image: string;
-    onDelete?: () => void;
+
 }
 
 const Product = (props: Fruit) => {
@@ -33,13 +33,20 @@ const Product = (props: Fruit) => {
             });
     }, [id]);
 
-
+    const handleDeleteProduct = (id: number) => {
+        axios.delete(`http://10.10.51.4:3000/products/${id}`)
+    }
+    
     return (
-        <div className={styles.wrapper}>
-            <div className={styles.photoContainer}>
-                <div className={styles.editRemoveContainer}>
-                    <Button children={pencil} mode='full' />
-                    <Button children={garbage} mode='full' onClick={props.onDelete} />
+        <div className={styles.wrapper} >
+            <div className={styles.photoContainer} >
+                <div className={styles.editRemoveContainer} >
+                    <Link href='/EditProduct'>
+                        <Button children={pencil} mode='full' />
+                    </Link>
+                    <div onClick={() => handleDeleteProduct(props?.id)}     >
+                        <Button children={garbage} mode='full' />
+                    </div>
                 </div>
                 <div className={styles.photo}>
                     <img src={props.image} />

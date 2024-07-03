@@ -6,7 +6,6 @@ interface Props {
     children?: ReactNode,
     className?: string,
     mode?: 'inline' | 'default' | 'full'| 'streach',
-    onClick?: () => void,
 }
 
 const Button = (props: Props) => {
